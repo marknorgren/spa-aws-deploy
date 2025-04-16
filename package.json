@@ -1,0 +1,18 @@
+{
+  "name": "spa-aws-deploy",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marknorgren/spa-aws-deploy.git"
+  },
+  "scripts": {
+    "tsc": "tsc -b",
+    "prettier": "prettier --write .",
+    "test": "pnpm --filter terraform test"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}

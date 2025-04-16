@@ -1,0 +1,10 @@
+packages:
+  # include all apps
+  - 'app-a'
+  - 'app-b'
+  - 'app-c'
+  - 'root-app'
+  # include shared utilities
+  - 'shared'
+  # include terraform infra (if it has a package.json)
+  - 'terraform'
