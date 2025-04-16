@@ -1,0 +1,39 @@
+Request Flow: {
+  shape: sequence_diagram
+  direction: right
+
+  # Actors (defined upfront for clarity with groups)
+  User: User's Browser
+  Cloudflare: DNS + CDN Proxy
+  CloudFront: AWS CDN
+  S3: AWS S3 Bucket
+  SPA: React Router (in Browser)
+
+  Initial Load / Valid Route: {
+    User -> Cloudflare: 1. GET /some/path
+    Cloudflare -> CloudFront: 2. GET /some/path
+    CloudFront.lookup -> S3.lookup: 3. GET /some/path (Not Found)
+    S3.lookup -> CloudFront.lookup: 4. 403/404 Error
+    CloudFront.lookup: 5. Trigger Custom Error Response
+    CloudFront.lookup."Note: Uses configured 40x -> /index.html (200 OK) rule"
+    CloudFront.lookup -> S3.lookup: 6. GET /index.html
+    S3.lookup -> CloudFront.lookup: 7. 200 OK (index.html)
+    CloudFront.lookup -> User: 8. 200 OK (index.html)
+    User.load -> SPA.render: 9. Load index.html + SPA assets
+    SPA.render -> User.load: 10. Render view for /some/path
+  }
+
+  Not Found Route: {
+    User -> Cloudflare: 1. GET /non-existent
+    Cloudflare -> CloudFront: 2. GET /non-existent
+    CloudFront.lookup -> S3.lookup: 3. GET /non-existent (Not Found)
+    S3.lookup -> CloudFront.lookup: 4. 403/404 Error
+    CloudFront.lookup: 5. Trigger Custom Error Response
+    CloudFront.lookup."Note: Uses configured 40x -> /index.html (200 OK) rule"
+    CloudFront.lookup -> S3.lookup: 6. GET /index.html
+    S3.lookup -> CloudFront.lookup: 7. 200 OK (index.html)
+    CloudFront.lookup -> User: 8. 200 OK (index.html)
+    User.load -> SPA.render: 9. Load index.html + SPA assets
+    SPA.render -> User.load: 10. Render 'Not Found' view
+  }
+}

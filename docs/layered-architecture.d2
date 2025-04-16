@@ -1,0 +1,26 @@
+# Layered Architecture
+
+direction: down
+
+# Layers (Containers)
+Client Layer: {
+  User: User's Browser
+  SPA: React Router (in Browser)
+}
+
+Edge Layer: {
+  Cloudflare: DNS + CDN Proxy
+}
+
+CDN Layer: {
+  CloudFront: AWS CDN Distribution
+}
+
+Storage Layer: {
+  S3: AWS S3 Bucket (Static Files)
+}
+
+# Connections (Illustrative)
+Client Layer -> Edge Layer
+Edge Layer -> CDN Layer
+CDN Layer -> Storage Layer
