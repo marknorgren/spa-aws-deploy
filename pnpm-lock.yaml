@@ -44,7 +44,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))
+        version: 4.4.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))
       dotenv-cli:
         specifier: ^8.0.0
         version: 8.0.0
@@ -67,8 +67,8 @@ importers:
         specifier: ^8.24.1
         version: 8.30.1(eslint@9.24.0)(typescript@5.8.3)
       vite:
-        specifier: ^6.3.4
-        version: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
 
   app-b:
     dependencies:
@@ -99,7 +99,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))
+        version: 4.4.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))
       dotenv-cli:
         specifier: ^8.0.0
         version: 8.0.0
@@ -125,8 +125,8 @@ importers:
         specifier: ^11.1.0
         version: 11.1.0
       vite:
-        specifier: ^6.3.4
-        version: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
 
   app-c:
     dependencies:
@@ -151,7 +151,7 @@ importers:
         version: 19.1.2(@types/react@19.1.2)
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))
+        version: 4.4.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))
       dotenv-cli:
         specifier: ^8.0.0
         version: 8.0.0
@@ -174,8 +174,8 @@ importers:
         specifier: ^8.24.1
         version: 8.30.1(eslint@9.24.0)(typescript@5.8.3)
       vite:
-        specifier: ^6.3.4
-        version: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
 
   root-app:
     dependencies:
@@ -200,7 +200,7 @@ importers:
         version: 8.30.1(eslint@9.24.0)(typescript@5.8.3)
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))
+        version: 4.4.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))
       eslint:
         specifier: ^9.8.0
         version: 9.24.0
@@ -214,8 +214,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       vite:
-        specifier: ^6.3.4
-        version: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
 
   shared:
     devDependencies:
@@ -1595,8 +1595,8 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite@6.3.4:
-    resolution: {integrity: sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==}
+  vite@6.3.5:
+    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2230,14 +2230,14 @@ snapshots:
       '@typescript-eslint/types': 8.30.1
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react@4.4.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))':
+  '@vitejs/plugin-react@4.4.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))':
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.1)
       '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.27.1)
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+      vite: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -2248,13 +2248,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.1.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))':
+  '@vitest/mocker@3.1.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))':
     dependencies:
       '@vitest/spy': 3.1.1
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+      vite: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
 
   '@vitest/pretty-format@3.1.1':
     dependencies:
@@ -2917,7 +2917,7 @@ snapshots:
       debug: 4.4.0
       es-module-lexer: 1.6.0
       pathe: 2.0.3
-      vite: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+      vite: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -2932,7 +2932,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3):
+  vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2948,7 +2948,7 @@ snapshots:
   vitest@3.1.1(@types/node@22.14.1)(tsx@4.19.3):
     dependencies:
       '@vitest/expect': 3.1.1
-      '@vitest/mocker': 3.1.1(vite@6.3.4(@types/node@22.14.1)(tsx@4.19.3))
+      '@vitest/mocker': 3.1.1(vite@6.3.5(@types/node@22.14.1)(tsx@4.19.3))
       '@vitest/pretty-format': 3.1.1
       '@vitest/runner': 3.1.1
       '@vitest/snapshot': 3.1.1
@@ -2964,7 +2964,7 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 2.0.0
-      vite: 6.3.4(@types/node@22.14.1)(tsx@4.19.3)
+      vite: 6.3.5(@types/node@22.14.1)(tsx@4.19.3)
       vite-node: 3.1.1(@types/node@22.14.1)(tsx@4.19.3)
       why-is-node-running: 2.3.0
     optionalDependencies:
