@@ -28,8 +28,8 @@ importers:
         version: 11.1.0
     devDependencies:
       '@eslint/js':
-        specifier: ^9.21.0
-        version: 9.28.0
+        specifier: ^9.31.0
+        version: 9.31.0
       '@types/node':
         specifier: ^24.0.10
         version: 24.0.10
@@ -83,8 +83,8 @@ importers:
         version: 7.6.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.21.0
-        version: 9.28.0
+        specifier: ^9.31.0
+        version: 9.31.0
       '@types/node':
         specifier: ^24.0.10
         version: 24.0.10
@@ -141,8 +141,8 @@ importers:
         version: 7.6.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.21.0
-        version: 9.28.0
+        specifier: ^9.31.0
+        version: 9.31.0
       '@types/react':
         specifier: ^19.0.10
         version: 19.1.6
@@ -666,6 +666,10 @@ packages:
 
   '@eslint/js@9.28.0':
     resolution: {integrity: sha512-fnqSjGWd/CoIp4EXIxWVK/sHA6DOHN4+8Ix2cX5ycOY7LG0UY8nHCU5pIp2eaE1Mc7Qd8kHspYNzYXT2ojPLzg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.31.0':
+    resolution: {integrity: sha512-LOm5OVt7D4qiKCqoiPbA7LWmI+tbw1VbTUowBcUMgQSuM6poJufkFkYDcQpo5KfgD39TnNySV26QjOh7VFpSyw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -2071,6 +2075,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.28.0': {}
+
+  '@eslint/js@9.31.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
